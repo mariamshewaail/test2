@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../day 1/images/1.jpg">
+    <title>Register</title>
+</head>
+
+<body style="background-color: bisque">
+    <fieldset>
+        <legend>registeration</legend>
+        <form style="
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          width: 60%;
+          flex-direction: column;
+        ">
+            <input type="hidden" name="user_id" />
+            <div style="
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+            justify-content: space-between;
+          ">
+                <div style="display: flex; flex-direction: column">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="f-name" placeholder="Mariam" />
+                </div>
+
+                <div style="display: flex; flex-direction: column">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="l-name" placeholder="Mohamed" />
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="email">email</label>
+                <input required type="email" id="email" name="email" placeholder="m@dd" />
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="password">password</label>
+                <input type="password" id="password" name="pass" />
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="r-password">repeat password</label>
+                <input type="password" id="r-password" name="r-pass" />
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="bd">birth date</label>
+                <input type="date" id="bd" name="birth" />
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="picture">picture</label>
+                <input type="file" id="picture" name="picture" />
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label>gender:</label>
+                <div>
+                    <input type="radio" id="male" name="male" />
+                    <label for="male">male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="female" />
+                    <label for="female">female</label>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="faculty">faculty</label>
+                <select id="faculty" name="facul">
+                    <option value="tanta">tanta</option>
+                    <option value="tanta">tanta</option>
+                    <option value="tanta">tanta</option>
+                    <option value="tanta">tanta</option>
+                </select>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="interests">interests</label>
+                <div>
+                    <input type="checkbox" name="programing" id="programing" />
+                    <label for="programing">programing</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="reading" id="reading" />
+                    <label for="reading">reading</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="swiming" id="swiming" />
+                    <label for="swiming">swiming</label>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column; width: 80%">
+                <label for="area">about you:</label>
+                <textarea id="area" name="about" cols="3" rows="5"> </textarea>
+            </div>
+            <div>
+                <input type="checkbox" />
+                <label>
+                    <a href="https://termly.io/resources/templates/terms-and-conditions-template/" target="_blank">
+                        i agree terms amd comdition</a>
+                </label>
+            </div>
+
+            <br />
+            <input type="submit" />
+            <input type="reset" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
